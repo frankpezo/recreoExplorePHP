@@ -11,6 +11,7 @@ try{
 //3. Realizamos la conexión
 $conexion = new PDO("sqlsrv:server=$host; database=$db", $user, $pass);
 $conexion ->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+//echo "Conectados MADAFAKERS XD";
 }catch(PDOException $e){
     echo 'ERROR: '. $e->getMessage();
 }
